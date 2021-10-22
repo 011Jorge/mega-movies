@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: #121212;
+}
+
+header {
+    width: auto;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #fff, #121212, #121212, #0e0e0e, #0e0e0e);
+}
+
+h1 {
+    font-size: 30px;
+    color: #E50914;
+}
+
+#navigationMenu {
+    padding-left: 100px;
+}
+
+#navigationMenu a {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 80px;
+    text-decoration: none;
+    color: #E50914;
+}
+
+#respostaGenero {
+    display: none;
+}
+
+section {
+    width: 1505px;
+    height: auto;
+    margin: 40px auto 0 auto;
+    background-color: #0E0E0E;
+    border-radius: 10px;
+}
+
+#highlights, #comedy, #kids {
+    display: flex;
+}
+
+h3 {
+    color: #fff;
+    padding: 20px;
+    display: block;
+}
+
+figure {
+    padding-left: 50px;
+    cursor: pointer;
+    width: 250px;
+    height: auto;
+}
+
+.imgMovie {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+figcaption {
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.movies a {
+    text-decoration: none;
+}

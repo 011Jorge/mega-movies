@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween-Kills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        video {
+            width: 800px;
+            height: 500px;
+        }
+
+        section {
+            padding-top: 20px;
+        }
+
+        input {
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            border: none;
+            font-size: 15px;
+            border-radius: 10px;
+            color: #fff;
+            background-color: rgba(255, 0, 0, 0.644);
+            cursor: pointer;
+        }
+
+        input:active {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <video src="./hallowen-kills.mp4" controls poster="./img-hallowen.jpg" id="movie"></video>
+        <section>
+            <input onclick="clickLegen()" type="button" value="Legendado">
+            <input onclick="clickDubla()" type="button" value="Dublado">
+        </section>
+    </div>
+    <div id="resposta"></div>
+
+
+<!-- 
+    Temos um erro no cóodigo das seguintes formas
+    -> Ao entrar no filme (caso não esteja disponivel o audio tem que aparecer poster ERRO) 
+    -> Atualmente removemos o filme (HALLOWEN) por motivo do github não aceitar files +100MB
+    -> O filme se encontra na pasta videos do pc
+    -> Adicionar a opção voltar ou HOME no player de video -->
+
+
+    <script>
+        let res = document.getElementById("resposta");
+        let movie = document.getElementById("movie");
+        movie.setAttribute("id", "movie");
+
+        function clickLegen() {
+            if (movie.setAttribute("src", "") || movie.setAttribute("poster", "erros.jpg")) {
+
+            } else {
+                movie.setAttribute("src", "hallowen-kills.mp4");
+                movie.setAttribute("poster", "");
+            }
+
+        }
+
+        function clickDubla() {
+            if (movie.setAttribute("src", "") || movie.setAttribute("poster", "erros.jpg")) {
+
+            }
+            //else {
+            //     movie.setAttribute("src", "teste.mp4");
+            //     movie.setAttribute("poster", "");
+            // }
+
+        }
+    </script>
+</body>
+
+</html>
