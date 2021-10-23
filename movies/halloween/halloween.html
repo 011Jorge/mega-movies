@@ -5,12 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = PT + Sans: wght @ 700 & display = swap "
+        rel=" stylesheet ">
+    <!--Fonte-->
     <title>Halloween-Kills</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        header {
+            width: auto;
+            height: 100px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(to bottom, #fff, #121212, #121212, #0e0e0e, #0e0e0e);
+            color: red;
+        }
+
+        #navigationMenu {
+            padding-left: 100px;
+        }
+
+        #navigationMenu a {
+            font-size: 18px;
+            font-weight: 700;
+            padding-left: 80px;
+            text-decoration: none;
+            color: #E50914;
         }
 
         body {
@@ -49,48 +78,51 @@
 </head>
 
 <body>
+    <header>
+        <h1>Mega <font color="#fff">Movies</font>
+    </header>
+
+
     <div>
-        <video src="./hallowen-kills.mp4" controls poster="./img-hallowen.jpg" id="movie"></video>
+        <video src="./hallowen-kills.mp4" controls poster="./imgHallowen.jpg" id="movie"></video>
         <section>
             <input onclick="clickLegen()" type="button" value="Legendado">
             <input onclick="clickDubla()" type="button" value="Dublado">
         </section>
     </div>
-    <div id="resposta"></div>
 
 
-<!-- 
+    <!-- 
     Temos um erro no cóodigo das seguintes formas
-    -> Ao entrar no filme (caso não esteja disponivel o audio tem que aparecer poster ERRO) 
-    -> Atualmente removemos o filme (HALLOWEN) por motivo do github não aceitar files +100MB
+    -> Atualmente removemos o filme (HALLOWEN) por motivo do github não aceitar files +100MB    
     -> O filme se encontra na pasta videos do pc
     -> Adicionar a opção voltar ou HOME no player de video -->
 
 
     <script>
-        let res = document.getElementById("resposta");
         let movie = document.getElementById("movie");
         movie.setAttribute("id", "movie");
 
         function clickLegen() {
-            if (movie.setAttribute("src", "") || movie.setAttribute("poster", "erros.jpg")) {
+            if (movie.setAttribute("src", "") || movie.setAttribute("poster", "imgErro.jpg")) {
 
-            } else {
-                movie.setAttribute("src", "hallowen-kills.mp4");
-                movie.setAttribute("poster", "");
-            }
+            } //Logo abaixo é aonde iremos inserir o filme caso esteja disponivel
 
+            // else {
+            //     movie.setAttribute("src", "hallowen-kills.mp4");
+            //     movie.setAttribute("poster", "");
+            // }
         }
 
         function clickDubla() {
-            if (movie.setAttribute("src", "") || movie.setAttribute("poster", "erros.jpg")) {
+            if (movie.setAttribute("src", "") || movie.setAttribute("poster", "imgErro.jpg")) {
 
-            }
+            } //Logo abaixo é aonde iremos inserir o filme caso esteja disponivel
+
             //else {
             //     movie.setAttribute("src", "teste.mp4");
             //     movie.setAttribute("poster", "");
             // }
-
         }
     </script>
 </body>
