@@ -11,7 +11,7 @@
     <link href="https: //fonts.googleapis.com/css2? family = PT + Sans: wght @ 700 & display = swap "
         rel=" stylesheet ">
     <!--Fonte-->
-    <title>Halloween-Kills</title>
+    <title>Soul</title>
     <style>
         * {
             margin: 0;
@@ -82,17 +82,14 @@
         <h1>Mega <font color="#fff">Movies</font>
     </header>
 
+    
     <div>
-        <video src="./hallowen-kills.mp4" controls autoplay muted poster="./imgHallowen.jpg" id="movie"></video>
+        <video src="./hallowen-kills.mp4" controls poster="./imgSoul.jpg" id="movie"></video>
         <section>
             <input onclick="clickLegen()" type="button" value="Legendado">
             <input onclick="clickDubla()" type="button" value="Dublado">
         </section>
     </div>
-
-
-
-
 
 
     <script>
@@ -102,10 +99,12 @@
         function clickLegen() {
             if (movie.setAttribute("src", "") || movie.setAttribute("poster", "imgErro.jpg")) {
 
-            } else {
-                movie.setAttribute("src", "hallowen-kills.mp4");
-                movie.setAttribute("poster", "");
-            }
+            } //Logo abaixo é aonde iremos inserir o filme caso esteja disponivel
+
+            // else {
+            //     movie.setAttribute("src", "hallowen-kills.mp4");
+            //     movie.setAttribute("poster", "");
+            // }
         }
 
         function clickDubla() {

@@ -14,7 +14,7 @@ header {
     height: 100px;
     padding: 20px;
     display: flex;
-    align-items: center;
+    align-items: ce nter;
     background-image: linear-gradient(to bottom, #fff, #121212, #121212, #0e0e0e, #0e0e0e);
 }
 
@@ -35,6 +35,7 @@ h1 {
     color: #E50914;
 }
 
+
 #respostaGenero {
     display: none;
 }
@@ -47,7 +48,7 @@ section {
     border-radius: 10px;
 }
 
-#highlights, #comedy, #kids {
+#highlights, #comedy, #kids, #action {
     display: flex;
 }
 
@@ -78,4 +79,35 @@ figcaption {
 
 .movies a {
     text-decoration: none;
+}
+
+footer {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 1500px;
+    height: auto;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #0E0E0E;
+}
+
+h5 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+li {
+    padding: 20px;
+    display: inline-flex;
+}  
+
+li:hover {
+    font-size: 22px;
+    color: red;
+    cursor: pointer;
+}
+
+#iconMovies {
+    padding-right: 10px;
 }
